@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="13dp"
+    tools:context=".LoginActivity">
+
+        <LinearLayout
+            android:id="@+id/Username_Full_Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/username_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:text="@string/username"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/username_hint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/Username"
+                    android:layout_weight="75"
+                    android:hint="@string/user_hint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pw_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username_field"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/pw"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:text="@string/password_text"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/pw_Hint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:hint="@string/password_hint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/confirm_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+
+                <TextView
+                    android:id="@+id/confirm_pw"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:text="@string/confirm_text"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/confirm_pw_hint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/confirm_pw"
+                    android:layout_weight="75"
+                    android:hint="@string/Confirm_hint" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/Username_Full_Field"
+            android:layout_below="@+id/Username_Full_Field"
+            android:text="@string/submit" />
+
+
+</RelativeLayout>
