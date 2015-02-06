@@ -12,4 +12,5 @@
     <string name="password_hint">Please enter your password</string>
     <string name="confirm_text">Confirm Password:</string>
     <string name="Confirm_hint">Please confirm your password</string>
+    <string name="random">random</string>
 </resources>
